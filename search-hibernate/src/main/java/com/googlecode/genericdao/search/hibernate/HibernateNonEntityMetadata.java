@@ -125,7 +125,7 @@ public class HibernateNonEntityMetadata implements Metadata {
 	}
 
 	public boolean isString() {
-		int[] types = type.sqlTypes((Mapping) sessionFactory);
+		int[] types = type.sqlTypes((Mapping) sessionFactory.getMetamodel().getSessionFactory());
 		return types.length == 1 && (types[0] == java.sql.Types.VARCHAR || types[0] == java.sql.Types.CHAR);
 	}
 	

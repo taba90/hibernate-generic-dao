@@ -76,7 +76,7 @@ public class HibernateEntityMetadata implements Metadata {
 		Type pType = metadata.getPropertyType(property);
 		Class<?> pCollectionType = null;
 		if (pType.isCollectionType()) {
-			pType = ((CollectionType)pType).getElementType((SessionFactoryImplementor) sessionFactory);
+			pType = ((CollectionType)pType).getElementType((SessionFactoryImplementor) sessionFactory.getMetamodel().getSessionFactory());
 			pCollectionType = pType.getReturnedClass();
 		}
 		

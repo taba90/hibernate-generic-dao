@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>sample.googlecode.genericdao</groupId>
 	<artifactId>jpa-hibernate-sample</artifactId>
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.3.0-SNAPSHOT</version>
 	<name>Hibernate Generic DAO Sample - Hibernate Entity Manager, Maven</name>
 	<description>Hibernate Generic DAO Sample Console App w/ Maven, JPA powered by Hibernate</description>
 	<url>http://code.google.com/p/hibernate-generic-dao/</url>
@@ -33,18 +33,18 @@
 		<dependency>
 			<groupId>com.googlecode.genericdao</groupId>
 			<artifactId>dao</artifactId>
-			<version>1.2.0-SNAPSHOT</version>
+			<version>1.3.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.googlecode.genericdao</groupId>
 			<artifactId>search-jpa-hibernate</artifactId>
-			<version>1.2.0-SNAPSHOT</version>
+			<version>1.3.0-SNAPSHOT</version>
 		</dependency>
 	
 		<dependency>
 	        <groupId>org.hibernate</groupId>
 	        <artifactId>hibernate-entitymanager</artifactId>
-	        <version>4.2.0.CR1</version>
+	        <version>5.5.0.Final</version>
 		</dependency>
 		
 		<!-- Using Log4J for logging -->
@@ -63,38 +63,38 @@
 			<!-- H2 Database  -->
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<version>1.3.170</version>
+			<version>1.3.175</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>3.2.1.RELEASE</version>
+			<version>5.3.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>3.2.1.RELEASE</version>
+			<version>5.3.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>3.2.1.RELEASE</version>
+			<version>5.3.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
-			<version>3.2.1.RELEASE</version>
+			<version>5.3.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>3.2.1.RELEASE</version>
+			<version>5.3.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>3.2.1.RELEASE</version>
+			<version>5.3.9</version>
 			<scope>test</scope>
 		</dependency>
 		

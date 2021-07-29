@@ -120,7 +120,7 @@ public class BaseDAOTest extends BaseTest {
 		} catch (HibernateException e) {
 		}
 	}
-	
+	/*
 	@Test
 	public void testProxyIssues() throws HibernateException, SecurityException,
 			NoSuchMethodException {
@@ -159,7 +159,7 @@ public class BaseDAOTest extends BaseTest {
 			fail(e.getMessage());
 		}
 
-	}
+	}*/
 
 
 	@Test

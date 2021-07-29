@@ -123,8 +123,14 @@ public class HibernateMetadataUtil implements MetadataUtil {
 		//it is a Hibernate proxy class (e.x. test.googlecode.genericdao.model.Person_$$_javassist_5).
 		//So if a class is not recognized, we will look at superclasses to see if
 		//it is a proxy.
-		while (sessionFactory.getClassMetadata(klass) == null) {
-			klass = klass.getSuperclass();
+		ClassMetadata metadataClass = null;
+		while (metadataClass == null) {
+			try {
+				metadataClass = sessionFactory.getClassMetadata(klass);
+			} catch(Exception e) {
+				metadataClass = null;
+				klass = klass.getSuperclass();
+			}
 			if (Object.class.equals(klass))
 				return null;
 		}
